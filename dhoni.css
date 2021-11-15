@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* TO use Box Model  */
+  }
+
+  body {
+    font-family: "Merriweather", serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .button__primary {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafc;
+    /* Box shadow - adds shadow effects around an element's frame*/
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      /* CSS z-index Property https://www.w3schools.com/cssref/pr_pos_z-index.asp*/
+    z-index: 9999;
+  }
+
+  .navbar__brand {
+    width: 100px;
+  }
+
+  .navbar__logo {
+    width: 100%;
+  }
+
+  .nav__item {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .hero__container{
+    margin-top: 1erm;
+  }
+
+  .button__primary:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .hero__image__container {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero__image__shape{
+    position: absolute;
+    right: 2;
+  }
+
+  .hero__image {
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero__text {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  .explore__menu__text {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .food__card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .food__card__image__container {
+    width: 100%;
+  }
+
+  .food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .food__card__description {
+    padding: 15px;
+  }
+
+/*Video container*/
+.video__footage__container {
+
+    margin-top: 3rem;
+    align-items: center;
+    width: 100%;
+    background-clip: padding-box;
+
+    z-index: -3;
+}
+
+.video__footage__text {
+
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: inherit;
+    padding-left: 5rem;
+    padding-bottom: 10rem;
+}
+  /* Flex in creating the images in box structure with 2 rows and 2 columns */
+  .restaurant__text {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .restaurant__images__container {
+    width: 100%;
+  }
+
+  .restaurant__images__row__one,
+  .restaurant__images__row__two {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+  }
+
+  .restaurant__images__row__one {
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+/* arrange the restaurant__1,restaurant__4 diagonally with in */
+  .restaurant__image__1,
+  .restaurant__image__4 {
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 150px;
+    height: 80px;
+    /* Box shadow - adds shadow effects around an element's frame*/
+    box-shadow: 0 10px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 7%);
+  }
+
+  .restaurant__image__2,
+  .restaurant__image__3 {
+    border-radius: 4px;
+    width: 200px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 7%);
+
+  }
+
+  .restaurant__1,
+  .restaurant__2,
+  .restaurant__3,
+  .restaurant__4 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .email__subcribe__container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .email__subcribe__input__field {
+    display: flex;
+    align-items: center;
+  }
+
+  .email__input {
+
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .email__input::placeholder {
+    color: #bdbcbc;
+  }
+
+
+
+  .footer{
+    display: flex;
+    margin-top: 45px;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(
+     to right, #ff512f 0%, #dd2476 51%, #ff512f 100%
+    );
+  }
+
+  .footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+
+  .footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+  }
+
+  .footer > ul > li {
+    margin: 5px 0;
+  }
+
+  .quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      center center / cover no-repeat;
+  }
+  .quote__image__overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 50%;
+  }
+
+  .quote__image__text {
+    color:#fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 2px 30px;
+    }
+
+    .hero__container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .text-xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      margin-top: 20px;
+    }
+
+    .explore__menu__lists {
+      margin-top: 40px;
+      display: flex;
+      gap: 15px;
+      padding: 0 30px;
+    }
+
+    #pizza__card {
+      margin-top: -20px;
+      margin-bottom: 30px;
+    }
+
+    .explore__menu__container {
+      margin-top: 30px;
+    }
+
+
+    .explore__menu__view__more {
+      display: flex;
+      justify-content: center;
+    }
+
+    .explore__menu__container {
+      position: relative;
+    }
+
+    .explore__menu__gradient__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      transform: skewY(-5deg);
+      z-index: -3;
+    }
+
+    .restaurant__container{
+      display: flex;
+      align-items: center;
+    }
+
+    .restaurant__text{
+      width: 100%;
+      font-size: 40px;
+    }
+
+ .email__text{
+
+ }
+    .email__subcribe__container {
+      display: flex;
+
+      justify-content: center;
+    }
+    .email__input {
+
+      margin-top: 10px;
+      width: 250px;
+      height: 45px;
+
+    }
+
+    .quote__container {
+      height: 300px;
+      width: 100%;
+    }
+    .quote__image__overlay {
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      border-radius: 13px;
+      background-color: #0a4065;
+      opacity: 49%;
+    }
+    .quote__image__text {
+      color: #fff;
+      z-index: 3;
+      margin: 0 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    footer {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+
+  @media (min-width: 1020px) {
+    .container {
+      max-width: 900px;
+    }
+    .navbar__brand {
+      width: 150px;
+    }
+    .button__primary {
+      height: 25px;
+      padding-top: : 20px;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+    .hero__description {
+      width: 100%;
+    }
+    .hero__text {
+      font-size: 50px;
+    }
+
+    .email__text {
+        display: flex;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .explore__menu__lists {
+      gap: 40px;
+    }
+    .explore__menu__text {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1250px;
+    }
+  }
